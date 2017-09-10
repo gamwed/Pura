@@ -10,17 +10,15 @@ body {
 
 .container {
   width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
 
 header {
   font-size: 0;
   line-height: 60px;
-  height: 680px;
-  background: url(../img/header.jpg) center -2px no-repeat;
-  background-size: cover; }
-.header-wrapper {
-  background: rgba(0, 0, 0, 0.5);
-  height: 100%; }
+  position: absolute;
+  z-index: 4;
+  width: 100%; }
 
 .header__logo {
   display: inline-block;
@@ -93,30 +91,86 @@ header {
   .-backgrad:hover:after {
     opacity: 1; }
 
-.header__block {
+.intro {
+  height: 600px;
+  background: url(../img/header.jpg);
+  background-size: cover;
+  padding-top: 92px;
   width: 100%;
-  text-align: center;
-  margin-top: 110px; }
-  .header__block h3 {
+  position: absolute;
+  top: 0;
+  text-align: center; }
+  .intro h3 {
     font-size: 25px;
     color: #fff; }
-    .header__block h3 span {
+    .intro h3 span {
       font-family: Times New Roman;
       letter-spacing: -0.4px; }
-  .header__block p {
+  .intro p {
     font-size: 50px;
     color: #fff;
     font-weight: 700; }
-  .header__block a {
+  .intro a {
     font-size: 17pt;
     padding: 15px 35px;
     color: #fff;
     text-decoration: none;
     font-weight: 700; }
 
-.block__button {
+.-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: -92px;
+  padding-top: 120px;
+  height: 600px; }
+
+.intro__button {
   display: block;
   margin-top: 80px; }
-  .block__button a span {
+  .intro__button a span {
     z-index: 3;
     position: relative; }
+
+.about {
+  height: 500px;
+  position: relative;
+  top: 600px; }
+
+.about__inner {
+  z-index: 3;
+  position: relative;
+  padding: 80px 0;
+  color: #fff; }
+  .about__inner h4 {
+    font-size: 40px;
+    font-weight: 700; }
+  .about__inner p {
+    margin-top: 28px;
+    font-size: 35px; }
+
+.about__button {
+  display: block;
+  widows: 100%;
+  text-align: right;
+  margin-top: 30px; }
+  .about__button a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 25px;
+    padding-right: 50px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: 0.8s; }
+    .about__button a:hover {
+      background: rgba(255, 255, 255, 0.4); }
+    .about__button a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/arrow.png);
+      right: 0;
+      margin-top: -25px;
+      margin-right: 20px; }
