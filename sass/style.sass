@@ -1,3 +1,4 @@
+$grad: linear-gradient(to left bottom, rgba(253, 63, 179, 1) 0%, rgba(253, 62, 79, 1) 80%)
 *
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -69,6 +70,11 @@ header
 	background: linear-gradient(to left bottom, rgba(253, 63, 179, 1) 0%, rgba(253, 62, 79, 1) 80%)
 	z-index: 1
 	position: relative
+	font-size: 17pt
+	padding: 15px 35px
+	color: #fff
+	text-decoration: none
+	font-weight: 700
 	-webkit-backface-visibility: hidden;
 	&:after
 		position: absolute
@@ -125,20 +131,20 @@ header
 	height: 500px
 	position: relative
 	top: 600px
-.about__inner
+.topic
+	font-size: 40px
+	font-weight: 700
+	padding: 60px 0;
+	display: inline-block;
+.about__wrapper
 	z-index: 3
 	position: relative
-	padding: 80px 0
+	padding-bottom: 80px
 	color: #fff
-	h4
-		font-size: 40px
-		font-weight: 700
 	p
-		margin-top: 28px
 		font-size: 35px
 .about__button
 	display: block
-	widows: 100%
 	text-align: right
 	margin-top: 30px
 	a
@@ -162,4 +168,109 @@ header
 			right: 0
 			margin-top: -25px
 			margin-right: 20px
-
+.ideas
+	position: absolute;
+	top: 1100px
+	height: 326px;
+	width: 100%;
+.idea__wrapper
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+.idea__block
+	padding: 100px 30px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: 0.8s
+	&:hover
+		background: $grad;
+		h5
+			position: absolute;
+			top: 130px
+			font-size: 18pt;
+			color: #fff
+		span
+			top: 40px
+			font-size: 50pt;
+			z-index: 2;
+			color: #fff
+		p
+			padding-top: 50px
+			color: #fff
+	h5
+		font-weight: 900;	
+		font-size: 20pt;
+		letter-spacing: -1px;
+		color: #7b7b7b	
+	span
+		font-size: 100pt;
+		position: absolute;
+		top: 80px;
+		font-weight: 700;
+		color: #ffe2e7
+		z-index: -1
+	p
+		z-index: 4;
+		margin-top: 30px;
+		color: #7b7b7b
+.team
+	position: relative;
+	top: 926px
+	margin-bottom: 75px;
+.team__wrapper
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;	
+.team__member
+	width: 100%;
+	text-align: center;
+	h6
+		font-weight: 900;
+		font-size: 16pt;
+	p
+		color: #9a9a9a
+.team__member__photo
+	img
+.solution
+	position: relative;
+	top: 926px
+.solution__wrapper
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 100%;
+	width: 100%;
+.solution__nout
+	width: 55%;
+	img
+		position: absolute;
+		left: 0;
+		max-width: 55%;
+		min-width: 700px
+.solution__text
+	width: 45%;
+	h4
+		font-size: 35pt;
+		line-height: 1;
+		font-weight: 900;
+		margin-bottom: 20px;
+		span
+			color: rgba(253, 63, 179, 1);
+	p
+		font-size: 15pt;
+		font-weight: 500;
+.solution__text__button
+	display: block
+	margin-top: 40px
+	a
+		span
+			z-index: 3
+			position: relative
